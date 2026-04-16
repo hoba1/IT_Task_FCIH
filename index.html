@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal course organizer</title>
+    <!-- for fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- for icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div>
+        <div class="logo-brand">personal course organizer</div>
+        <button class="nav-menu-button">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <ul>
+          <li><a href="./index.html" class="active-page">Home</a></li>
+          <li><a href="./my_courses.html">My Courses</a></li>
+          <li><a href="./add_course.html">Add Course</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-decoration primary"></div>
+        <div class="hero-decoration secondary"></div>
+        <div class="hero-content">
+          <h1>
+            Learn Without <span class="hero-title-highlight">Limits</span>
+          </h1>
+          <p>
+            Experience a new standard of digital education. Curated courses,
+            expert mentorship, and an intuitive interface designed for the
+            focused learner.
+          </p>
+          <div class="hero-buttons-container">
+            <a href="./my_courses.html">
+              <button class="btn btn-primary">Browse Courses</button>
+            </a>
+            <a href="./add_course.html">
+              <button class="btn-secondary-subtle">Add a Course</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features-section">
+        <div class="section-wrapper">
+          <div class="features-header">
+            <h2>Why Choose Us</h2>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon ">
+                <span class="material-symbols-outlined icon-size-lg"
+                  >school</span
+                >
+              </div>
+              <h3>Expert Instructors</h3>
+              <p>
+                Learn from industry veterans who bring years of practical
+                experience directly to your digital screen.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon secondary ">
+                <span class="material-symbols-outlined icon-size-lg"
+                  >schedule</span
+                >
+              </div>
+              <h3>Flexible Hours</h3>
+              <p>
+                Education that fits your life. Access modules anytime, anywhere,
+                and progress at your own unique pace.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon tertiary ">
+                <span class="material-symbols-outlined icon-size-lg"
+                  >insights</span
+                >
+              </div>
+              <h3>Track Progress</h3>
+              <p>
+                Visualize your growth with advanced analytics and milestone
+                tracking that keeps you motivated.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="about-container">
+          <div class="about-images">
+            <div class="about-image-col1">
+              <div class="image-box">
+                <img
+                  alt="Study space"
+                  src="./images/about1.png"
+                />
+              </div>
+            </div>
+            <div>
+              <div class="image-box">
+                <img
+                  alt="Collaborative effort"
+                  src="./images/about2.png"
+                />
+              </div>
+            </div>
+            <div class="stats-overlay">
+              <div>
+                <div class="stats-overlay-value">10K+</div>
+                <div class="stats-overlay-label">Global Students</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div>
+              <div class="about-label">About our platform</div>
+              <h2>Empowering Minds in the Digital Era</h2>
+            </div>
+            <p>
+              EduFlow revolutionizes online learning by combining cutting-edge
+              technology with highly personalized education. Every course is
+              meticulously crafted to deliver real-world skills that employers
+              are actively seeking.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-text">Premium Courses</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-text">Satisfaction Rate</div>
+              </div>
+            </div>
+            <div class="about-cta">
+              <a href="./my_courses.html" class="about-cta-btn">Explore Our Mission →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Courses Section -->
+      <section class="courses-section">
+        <div class="courses-header">
+          <div class="max-width-wrapper">
+            <h2>Popular Courses</h2>
+            <p>
+              Join thousands of students in our most-loved learning paths and
+              kickstart your career.
+            </p>
+          </div>
+          <a href="./my_courses.html" class="view-all-btn">View All Courses</a>
+        </div>
+
+        <div class="courses-grid">
+          <!-- Course 1 -->
+          <div class="course-card">
+            <div class="course-header course-header-primary">
+              <img
+                alt="Web development"
+                src="./images/course1.png"
+              />
+            </div>
+            <div class="course-content">
+              <h3 class="course-title">Advanced Fullstack Web Architecture</h3>
+              <div class="course-meta">
+                <div class="course-meta-item">
+                  <span class="material-symbols-outlined icon-size-md"
+                    >timer</span
+                  >
+                  24h 45m
+                </div>
+                <div class="course-meta-item">
+                  <span class="material-symbols-outlined icon-size-md"
+                    >person</span
+                  >
+                  1.2k Students
+                </div>
+              </div>
+              <button class="course-button">View Course</button>
+            </div>
+          </div>
+
+          <!-- Course 2 -->
+          <div class="course-card ">
+            <div class="course-header course-header">
+              <img
+                alt="UI/UX Design"
+                src="./images/course2.png" />
+            </div>
+            <div class="course-content">
+              <h3 class="course-title">Mastering Visual Systems & UI Design</h3>
+              <div class="course-meta">
+                <div class="course-meta-item">
+                  <span class="material-symbols-outlined icon-size-md"
+                    >timer</span
+                  >
+                  18h 20m
+                </div>
+                <div class="course-meta-item">
+                  <span class="material-symbols-outlined icon-size-md"
+                    >person</span
+                  >
+                  850 Students
+                </div>
+              </div>
+              <button class="course-button">View Course</button>
+            </div>
+          </div>
+
+          <!-- Course 3 -->
+          <div class="course-card ">
+            <div class="course-header course-header">
+              <img
+                alt="Data Science"
+                src="./images/course3.png"
+              />
+            </div>
+            <div class="course-content">
+              <h3 class="course-title">Data-Driven Decision Making 101</h3>
+              <div class="course-meta">
+                <div class="course-meta-item">
+                  <span class="material-symbols-outlined">timer</span>
+                  32h 10m
+                </div>
+                <div class="course-meta-item">
+                  <span class="material-symbols-outlined">person</span>
+                  2.4k Students
+                </div>
+              </div>
+              <button class="course-button">View Course</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="margin-bottom-medium flex-grow">
+          <div class="footer-brand">Personal Course Organizer</div>
+          <p class="footer-copyright">© 2026 Personal Course Organizer. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html" class="active-page">Home</a>
+          <a href="./my_courses.html" >My Courses</a>
+          <a href="./add_course.html">Add Course</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

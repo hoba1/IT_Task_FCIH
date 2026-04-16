@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal course organizer</title>
+    <!-- for fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- for icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div>
+        <div class="logo-brand">personal course organizer</div>
+        <button class="nav-menu-button">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <ul>
+          <li><a href="./index.html" >Home</a></li>
+          <li><a href="./my_courses.html">My Courses</a></li>
+          <li><a href="./add_course.html" class="active-page">Add Course</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Header -->
+      <header class="page-header">
+        <h1>
+          Expand the <span class="gradient-text-secondary">Curriculum</span>
+        </h1>
+        <p>
+          Craft a new learning journey. Provide the details below to initialize
+          your course within the EduFlow ecosystem.
+        </p>
+      </header>
+
+      <!-- Form Section -->
+      <section class="form-section">
+        <div class="form-container">
+          <form id="addCourseForm" class="form-flex-column">
+            <!-- Course Name -->
+            <div class="form-group">
+              <label for="courseName">Course Name</label>
+              <input
+                type="text"
+                id="courseName"
+                name="courseName"
+                placeholder="e.g. Advanced Quantum Mechanics"
+                required
+              />
+            </div>
+
+            <!-- Instructor -->
+            <div class="form-group">
+              <label for="instructor">Instructor Name</label>
+              <input
+                type="text"
+                id="instructor"
+                name="instructor"
+                placeholder="e.g. Dr. Sarah Vance"
+                required
+              />
+            </div>
+
+            <!-- Hours -->
+            <div class="form-group">
+              <label for="hours">Total Duration (Hours)</label>
+              <input
+                type="number"
+                id="hours"
+                name="hours"
+                min="1"
+                placeholder="0"
+                required
+              />
+            </div>
+
+            <!-- Notes -->
+            <div class="form-group">
+              <label for="notes">Course Notes & Description</label>
+              <textarea
+                id="notes"
+                name="notes"
+                placeholder="Describe the learning objectives and prerequisites..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="padding-top-small">
+              <button type="submit" id="submitBtn" class="submit-button">
+                <span id="btnText">Deploy Course</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+   <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="margin-bottom-medium flex-grow">
+          <div class="footer-brand">Personal Course Organizer</div>
+          <p class="footer-copyright">© 2026 Personal Course Organizer. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html" >Home</a>
+          <a href="./my_courses.html" >My Courses</a>
+          <a href="./add_course.html" class="active-page">Add Course</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

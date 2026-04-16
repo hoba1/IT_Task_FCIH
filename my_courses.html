@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal course organizer</title>
+    <!-- for fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- for icons -->
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div>
+        <div class="logo-brand">personal course organizer</div>
+        <button class="nav-menu-button">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li>
+            <a href="./my_courses.html" class="active-page">My Courses</a>
+          </li>
+          <li><a href="./add_course.html">Add Course</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="table-section">
+      <!-- Page Header -->
+      <header class="page-header">
+        <h1>My Courses</h1>
+        <p>
+          Manage your academic journey. Track progress, edit curriculum details,
+          and organize your learning path in one premium space.
+        </p>
+      </header>
+
+      <!-- Search and Filter Bar -->
+      <div class="search-filter-bar">
+        <div class="search-box">
+          <span class="icon material-symbols-outlined">search</span>
+          <input
+            type="text"
+            placeholder="Search by course name or instructor..."
+          />
+        </div>
+        <a href="./add_course.html">
+          <button class="new-course-btn">New Course</button>
+        </a>
+      </div>
+
+      <!-- Table -->
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Instructor</th>
+              <th>Hours</th>
+              <th>Notes</th>
+              <th class="text-align-right">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1 -->
+            <tr>
+              <td>01</td>
+              <td>
+                <div class="course-name">
+                  <span class="text-bold">Advanced UI Design Systems</span>
+                </div>
+              </td>
+              <td class="instructor-italic">Dr. Elena Vance</td>
+              <td><span class="hours-badge">42h</span></td>
+              <td class="course-notes-text">
+                Focused on atomic design principles.
+              </td>
+              <td>
+                <div class="action-buttons">
+                  <button class="action-btn">
+                    <span class="material-symbols-outlined icon-size-med"
+                      >edit</span
+                    >
+                  </button>
+                  <button class="action-btn delete-btn">
+                    <span class="material-symbols-outlined icon-size-med"
+                      >delete</span
+                    >
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+              <td>02</td>
+              <td>
+                <div class="course-name">
+                  <span class="text-bold">Backend Architecture Patterns</span>
+                </div>
+              </td>
+              <td class="instructor-italic">Marcus Thorne</td>
+              <td><span class="hours-badge">36h</span></td>
+              <td class="course-notes-text">
+                Microservices and K8s deep dive.
+              </td>
+              <td>
+                <div class="action-buttons">
+                  <button class="action-btn">
+                    <span class="material-symbols-outlined icon-size-med"
+                      >edit</span
+                    >
+                  </button>
+                  <button class="action-btn delete-btn">
+                    <span class="material-symbols-outlined icon-size-med"
+                      >delete</span
+                    >
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr>
+              <td>03</td>
+              <td>
+                <div class="course-name">
+                  <span class="text-bold">AI & Ethics in Modern Tech</span>
+                </div>
+              </td>
+              <td class="instructor-italic">Sarah J. Miller</td>
+              <td><span class="hours-badge">18h</span></td>
+              <td class="course-notes-text">
+                Exploring the moral compass of LLMs.
+              </td>
+              <td>
+                <div class="action-buttons">
+                  <button class="action-btn">
+                    <span class="material-symbols-outlined icon-size-med"
+                      >edit</span
+                    >
+                  </button>
+                  <button class="action-btn delete-btn">
+                    <span class="material-symbols-outlined icon-size-med"
+                      >delete</span
+                    >
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 4 -->
+            <tr>
+              <td>04</td>
+              <td>
+                <div class="course-name">
+                  <span class="text-bold">Data Science Visualization</span>
+                </div>
+              </td>
+              <td class="instructor-italic">Prof. Alan Turing II</td>
+              <td><span class="hours-badge">54h</span></td>
+              <td class="course-notes-text">
+                Storytelling with complex data sets.
+              </td>
+              <td>
+                <div class="action-buttons">
+                  <button class="action-btn">
+                    <span class="material-symbols-outlined icon-size-med"
+                      >edit</span
+                    >
+                  </button>
+                  <button class="action-btn delete-btn">
+                    <span class="material-symbols-outlined icon-size-med"
+                      >delete</span
+                    >
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 5 -->
+            <tr>
+              <td>05</td>
+              <td>
+                <div class="course-name">
+                  <span class="text-bold">Cloud Native Foundations</span>
+                </div>
+              </td>
+              <td class="instructor-italic">Ingrid Storm</td>
+              <td><span class="hours-badge">28h</span></td>
+              <td class="course-notes-text">AWS, GCP and Azure compared.</td>
+              <td>
+                <div class="action-buttons">
+                  <button class="action-btn">
+                    <span class="material-symbols-outlined icon-size-med"
+                      >edit</span
+                    >
+                  </button>
+                  <button class="action-btn delete-btn">
+                    <span class="material-symbols-outlined icon-size-med"
+                      >delete</span
+                    >
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="margin-bottom-medium flex-grow">
+          <div class="footer-brand">Personal Course Organizer</div>
+          <p class="footer-copyright">
+            © 2026 Personal Course Organizer. All rights reserved.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html">Home</a>
+          <a href="./my_courses.html" class="active-page">My Courses</a>
+          <a href="./add_course.html">Add Course</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
