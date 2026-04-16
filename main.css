@@ -149,6 +149,12 @@ nav .nav-left-group {
     display: none;
     padding: 0.5rem 0;
   }
+
+  nav ul:hover {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 nav > div {
